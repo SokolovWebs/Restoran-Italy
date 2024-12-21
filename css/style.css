@@ -462,23 +462,6 @@ main {
     line-height: 200%;
 }
 
-a.chefs_all {
-    background-color: var(--c02);
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #fff;
-    padding: 17px 75px;
-    border-radius: 160px;
-    transition: all .4s ease;
-    display: inline-block;
-}
-
-a.chefs_all:hover {
-    background-color: var(--c03);
-    transform: scale(1.07);
-}
-
 /* Clients */
 .clients {
     background-color: rgba(208, 204, 199, .1);
@@ -569,7 +552,7 @@ li.login{
 }
 
 /* Скрыть меню по умолчанию */
-.hidden {
+.hidden, footer {
     display: none;
 }
 
@@ -652,7 +635,7 @@ li.login{
     .container{
         max-width: none;
     }
-    
+
     p, h1, h2, h3{
         margin: 0;
         padding: 0;
@@ -701,7 +684,7 @@ li.login{
 
     /* welcome */
 
-    .welcome, main, header, .menu, .reserve, .chefs{
+    .welcome, main, header, .menu, .reserve, .chefs, .footer{
         padding: 10px 14px;
     }
 
@@ -801,7 +784,7 @@ li.login{
     }
 
     .chef_item img, .chef_item{
-        width: 70%;
+        width: 78%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -828,10 +811,45 @@ li.login{
 
 
 
-    /* Clients */
+    /* Clients & Footer */
 
-    .clients_inner h2{
-        font-size: 26px;
+    .clients{
+        display: none;
+    }
+
+    footer{
+        display: block;
+        background-color: #000;
+    }
+
+    .footer{
+        padding-top: auto;
+        padding-bottom: auto;
+    }
+
+    .footer_inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer img{
+        width: 35%;
+        height: 35%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .footer_inner p{
+        /* font-family: "Poppins", sans-serif; */
+        font-family: "Raleway", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        width: 60%;
+        color: #fff;
+        margin-right: 5%;
+
+        padding-top: auto;
+        padding-bottom: auto;
     }
 }
 
@@ -867,4 +885,17 @@ li.login{
     img.header_content_logo{
         margin-left: 10px;
     }
+}
+
+
+@media screen and (max-width: 300px) {
+    .m_c_btn1, .m_c_btn2 {
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform .33s ease;
+    display: inline-block;
+    padding: 9px 17px;
+    font-size: 14px;
+}
 }
