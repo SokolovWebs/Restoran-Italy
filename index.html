@@ -6,119 +6,82 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>AS Place</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kurale&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kurale&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kurale&family=Oranienbaum&family=Raleway:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+
     <!-- Header -->
-     <header>
+<header>
+    <div class="container">
+        <div class="header_content">
+            <img class="header_content_logo" src="img/logo.png" alt="Логотип">
 
-        <div class="container">
-
-            <div class="header_content">
-
-                <img class="header_content_logo" src="img/logo.png" alt="Логотип">
-
-
-                <nav>
-                    <a class="li1" href="#">Главная</a>
-                    <a             href="#">Меню</a>
-                    <a             href="#">О нас</a>
-                    <a             href="#">Бронь</a>
-                    <a             href="#">Связаться с Нами</a>
-                </nav>
-
-
-                <div class="header_content_last">
-                    <img src="img/cart.png" alt="Корзина">
-
-                    <a href="#" class="btn">Войти</a>
+            <nav class="nav">
+                <div class="burger-menu" id="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
+                <ul class="nav_menu" id="nav-menu">
+                    <li style="list-style-type: none;"><a class="li1" href="#">Главная</a></li>
+                    <li style="list-style-type: none;"><a href="#">Меню</a></li>
+                    <li style="list-style-type: none;"><a href="#">О нас</a></li>
+                    <li style="list-style-type: none;"><a href="#">Бронь</a></li>
+                    <li style="list-style-type: none;"><a href="#">Контакты</a></li>
+                    <li style="list-style-type: none;" class="login"><a href="#">Войти</a></li>
+                </ul>
+            </nav>
 
+            <div class="header_content_last">
+                <img src="img/cart.png" alt="Корзина">
+                <a href="#" class="btn">Войти</a>
             </div>
-
         </div>
+    </div>
+</header>
 
-     </header>
 
-
-     <!-- Main -->
-     <main>
-
+    <!-- Main -->
+    <main>
         <div class="container">
-
             <div class="main_content">
-
                 <div>
                     <div class="main_content_title">Ресторан</div>
-
                     <h1>Итальянская<br>Кухня</h1>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit tristique donec eget.</p>
-
                     <div class="main_content_buttons">
                         <a class="m_c_btn1" href="#">Заказать сейчас</a>
-                        
                         <a class="m_c_btn2" href="#">Бронь</a>
                     </div>
                 </div>
-
-
                 <div>
-                    <img src="img/salad.png" alt="Паста">
+                    <img class="salad" src="img/salad.png" alt="Паста">
                 </div>
-
             </div>
-
         </div>
+    </main>
 
-     </main>
-
-
-     <!-- Welcome -->
-     <section class="welcome">
-
+    <!-- Welcome -->
+    <section class="welcome">
         <div class="container">
-
             <div class="welcome_all">
-
-                <img src="img/salad2.png" alt="Салат">
-
-
+                <img class="salad2" src="img/salad2.png" alt="Салат">
                 <div>
                     <h2>Welcome to <span>delizioso</span></h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
                     <a href="#">Просмотреть меню</a>
                 </div>
-
             </div>
-
         </div>
+    </section>
 
-     </section>
-
-
-     <!-- Menu -->
-     <section class="menu">
-
+    <!-- Menu -->
+    <section class="menu">
         <div class="container">
-
             <h2>Наше популярное меню</h2>
-
             <div class="menu_buttons">
                 <a class="checked" href="#">Вcе блюда</a>
                 <a href="#">Ужин</a>
@@ -126,15 +89,11 @@
                 <a href="#">Десерты</a>
                 <a href="#">Напитки</a>
             </div>
-
             <div class="menu_items">
-
                 <!-- 1 -->
-                <div class="menu_item">   
+                <div class="menu_item">
                     <img src="img/menu/spaghetti.png" alt="Спагетти">
-
                     <h3>Spaghetti</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -142,22 +101,16 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-
                 <!-- 2 -->
                 <div class="menu_item">
                     <img src="img/menu/gnocchi.png" alt="Гночи">
-
                     <h3>Gnocchi</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -165,22 +118,16 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-                
                 <!-- 3 -->
                 <div class="menu_item">
                     <img src="img/menu/rovioli.png" alt="Равиоли">
-
                     <h3>Rovioli</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -188,22 +135,16 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-                
                 <!-- 4 -->
                 <div class="menu_item">
                     <img src="img/menu/penne.png" alt="Пенне алла водка">
-
                     <h3>Penne Alla Vodak</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -211,22 +152,16 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-                
                 <!-- 5 -->
                 <div class="menu_item">
                     <img src="img/menu/risoto.png" alt="Ризотто">
-
                     <h3>Risoto</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -234,22 +169,16 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-                
                 <!-- 6 -->
                 <div class="menu_item">
                     <img src="img/menu/pizza.png" alt="Пицца">
-
                     <h3>Splitza Signature</h3>
-
                     <div class="menu_item_rating">
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star.png" alt="">
@@ -257,147 +186,85 @@
                         <img src="img/menu/star.png" alt="">
                         <img src="img/menu/star0.svg" alt="">
                     </div>
-
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
-
                     <div class="menu_item_last">
                         <h4 class="menu_item_last_price">$10</h4>
-
                         <a href="#">Заказать</a>
                     </div>
                 </div>
-
             </div>
-
             <div class="menu_pag">
-                <a class="back" href="#"> <span><</span> </a>
-
-                <a class="page" href="#"> <span>1</span> </a>
-                <a class="page" href="#"> <span>2</span> </a>
-                <a class="page" href="#"> <span>3</span> </a>
-
-                <a class="dot" href="#"> <span>...</span> </a>
-
-                <a class="next" href="#"> <span>></span> </a>
+                <a class="back" href="#"><span><</span></a>
+                <a class="page" href="#"><span>1</span></a>
+                <a class="page" href="#"><span>2</span></a>
+                <a class="page" href="#"><span>3</span></a>
+                <a class="dot" href="#"><span>...</span></a>
+                <a class="next" href="#"><span>></span></a>
             </div>
-
         </div>
+    </section>
 
-     </section>
-
-
-     <!-- Reserve -->
-     <section class="reserve">
-
+    <!-- Reserve -->
+    <section class="reserve">
         <div class="container">
             <div class="reserve_inner">
-
                 <div class="reserve_left">
                     <img src="img/reserve.png" alt="Бронь столика">
                 </div>
-
-
                 <div class="reserve_right">
-
-                    <h2>Let's reserve <span>a table</span> </h2>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-
+                    <h2>Let's reserve <span>a table</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
                     <a href="#">Reservation</a>
                 </div>
             </div>
-
         </div>
+    </section>
 
-     </section>
-
-
-     <!-- Chefs -->
-
-     <section class="chefs">
-
+    <!-- Chefs -->
+    <section class="chefs">
         <div class="container">
-
             <h2>Наши лучшие Шеф-повара</h2>
-
             <div class="chefs_inner">
-
                 <div class="chef_item">
-
                     <img src="img/chef1.png" alt="Главный шеф">
-
                     <h3>Betran Komar</h3>
-
                     <p>Head chef</p>
-
                 </div>
-
-
                 <div class="chef_item">
-
                     <img src="img/chef2.png" alt="Главный шеф">
-
                     <h3>Ferry Sauwi</h3>
-
                     <p>Chef</p>
-
                 </div>
-
-
                 <div class="chef_item">
-
                     <img src="img/chef3.png" alt="Главный шеф">
-
                     <h3>Iswan Dracho</h3>
-
                     <p>Chef</p>
-
                 </div>
-
             </div>
-
             <a href="#" class="chefs_all">View all</a>
-
         </div>
+    </section>
 
-     </section>
-
-
-     <!-- Clients -->
-
-     <section class="clients">
-        
+    <!-- Clients -->
+    <section class="clients">
         <div class="container">
-
             <div class="clients_inner">
-
                 <h2 class="clients_title">Our customers say</h2>
-
                 <div class="clients_about">
                     <img class="clients_about_img" src="img/clients/mainUser.png" alt="Пользователь">
-
                     <h2 class="clients_about_title">Starla Virgoun</h2>
-
                     <p class="clients_about_text">Financial advisor</p>
-
                     <div class="clients_about_inner">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam </p>
-
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
                         <img id="dot1" src="img/clients/comma.png" alt="">
                         <img id="dot2" src="img/clients/comma.png" alt="">
-                        
                     </div>
-
                     <img class="clients_about_users" src="img/clients/Users.png" alt="пользователи">
-
                 </div>
             </div>
-
         </div>
+    </section>
 
-     </section>
-
-
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
