@@ -648,6 +648,11 @@ li.login{
 
 
 @media screen and (max-width: 650px) {
+
+    .container{
+        max-width: none;
+    }
+    
     p, h1, h2, h3{
         margin: 0;
         padding: 0;
