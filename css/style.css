@@ -1,7 +1,4 @@
-
-
 /* Переменные */
-
 :root {
     --c01: #311F09;
     --c02: #FF8A00;
@@ -9,373 +6,346 @@
     --c04: #FFE6C9;
 }
 
-
-
 /* Общие стили */
-
-body, html{
+body, html {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-
     scroll-behavior: smooth;
-
     margin: 0;
     padding: 0;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 1237px;
-
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
-
-
 /* Header */
-
-header{
+header {
     margin-top: 50px;
 }
 
-.header_content{
+.header_content {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 }
 
-.header_content_last{
+.header_content_last {
     display: flex;
-
     align-items: center;
 }
 
-.header_content_last img{
+.header_content_last img {
     margin-right: 30px;
 }
 
-.header_content_last a.btn{
+.header_content_last a.btn {
     text-decoration: none;
     background-color: var(--c03);
     color: #fff;
-
     border-radius: 133px;
-
     padding: 15px 35px;
-
     transition: background-color .32s ease;
 }
 
-.header_content_last a.btn:hover{
+.header_content_last a.btn:hover {
     background-color: var(--c02);
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: var(--c01);
-
     margin-right: 45px;
-
     transition: all .25s ease; 
     display: inline-block;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--c03);
     transform: scale(1.05);
 }
 
-nav a:last-of-type{
+nav a:last-of-type {
     margin-right: 0;
 }
 
-nav a.li1{
+nav a.li1 {
     color: var(--c02);
 }
 
+/* Основные стили для навигационного меню */
+.nav_menu {
+    display: flex; /* Используем flex для расположения элементов в строку */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы по умолчанию */
+    margin: 0; /* Убираем внешние отступы */
+}
 
+/* Элементы навигации */
+.nav_menu li {
+    margin-right: 30px; /* Отступ между элементами */
+}
+
+.nav_menu li:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+/* Стили для ссылок в меню */
+.nav_menu a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: var(--c01); /* Цвет текста */
+    transition: color 0.25s ease; /* Плавный переход цвета */
+}
+
+.nav_menu a:hover {
+    color: var(--c03); /* Цвет текста при наведении */
+}
 
 /* Main */
-
-main{
+main {
     margin-top: 150px;
 }
 
-.main_content{
+.main_content {
     display: flex;
     justify-content: space-between;
 }
 
-.main_content_title{
+.main_content_title {
     color: var(--c02);
     background-color: var(--c04);
-
     padding: 10px 34px;
     border-radius: 125px;
     display: inline-block;
-
     margin-bottom: 25px;
 }
 
-.main_content h1{
+.main_content h1 {
     color: var(--c01);
     font-size: 70px;
     font-family: "Raleway", sans-serif;
-
     line-height: 110%;
     font-weight: 700;
-
     margin-bottom: 30px;
-
-    /* Возвращаюсь в начало CSS файла и отключаю отступы для всех заголовков и абзацев, так как они по умолчанию присутствуют у браузера */
 }
 
-.main_content p{
+.main_content p {
     line-height: 200%;
     color: var(--c01);
-
     margin-bottom: 75px;
 }
 
-.main_content_buttons{
+.main_content_buttons {
     display: flex;
 }
 
-.m_c_btn1{
-    background-color: var(--c02);
+.m_c_btn1, .m_c_btn2 {
     border-radius: 160px;
     color: #fff;
     text-decoration: none;
-
     transition: transform .33s ease;
     display: inline-block;
-
     padding: 15px 50px;
 }
 
-.m_c_btn2{
-    background-color: var(--c03);
-    border-radius: 160px;
-    color: #fff;
-    text-decoration: none;
-
-    padding: 15px 60px;
-    margin-left: 22px;
-
-    transition: transform .33s ease;
-    display: inline-block;
+.m_c_btn1 {
+    background-color: var(--c02);
 }
 
-.main_content_buttons a:hover{
+.m_c_btn1:hover, .m_c_btn2:hover {
     transform: scale(1.05);
 }
 
-
-
-/* Welcome */
-
-.welcome{
-    background-color: rgba(63, 198, 110, 0.1);
-
-    padding-top: 147px;
-    padding-bottom: 132px;
+.m_c_btn2 {
+    background-color: var(--c03);
+    padding: 15px 60px;
+    margin-left: 22px;
 }
 
-.welcome_all{
+/* Welcome */
+.welcome {
+    background-color: rgba(63, 198, 110, 0.1);
+    padding: 147px 0 132px 0;
+}
+
+.welcome_all {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.welcome_all h2{
+.welcome_all h2 {
     line-height: 110%;
     font-size: 80px;
     font-family: "Tinos", serif;
     font-weight: 700;
     color: var(--c01);
-
     margin-bottom: 60px;
 }
 
-.welcome_all h2 span{
+.welcome_all h2 span {
     color: var(--c02);
 }
 
-.welcome_all p{
+.welcome_all p {
     color: #5C4529;
     line-height: 200%;
-
     margin-bottom: 120px;
 }
 
-.welcome_all a{
+.welcome_all a {
     background-color: var(--c02);
     color: #fff;
     padding: 17px 45px;
     border-radius: 160px;
     text-decoration: none;
-
     transition: all .33s ease;
     display: inline-block;
 }
 
-.welcome_all a:hover{
+.welcome_all a:hover {
     transform: scale(1.07);
     background-color: var(--c03);
 }
 
-
-
 /* Menu */
-
-.menu{
-    padding-top: 164px;
-    padding-bottom: 200px;
+.menu {
+    padding: 164px 0 200px 0;
 }
 
-.menu h2{
+.menu h2 {
     font-family: "Tinos", serif;
     text-align: center;
     font-weight: 700;
     font-size: 70px;
     line-height: 200%;
     color: var(--c01);
-
     margin-bottom: 60px;
 }
 
-.menu_buttons{
+.menu_buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-bottom: 66px;
 }
 
-.menu_buttons a{
+.menu_buttons a {
     background-color: rgba(208, 204, 199, 0.2);
     color: var(--c01);
     font-size: 20px;
     text-decoration: none;
     padding: 17px 62px;
     border-radius: 160px;
-
     transition: background-color .3s ease;
 }
 
-.menu_buttons a:hover{
+.menu_buttons a:hover {
     background-color: var(--c02);
 }
 
-.menu_buttons .checked{
+.menu_buttons .checked {
     background-color: var(--c01);
     color: #fff;
 }
 
-.menu_items{
+.menu_items {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.menu_item{
+.menu_item {
     width: 32%;
     background-color: rgba(208, 204, 199, 0.18);
     border-radius: 70px;
     text-align: center;
-
     padding: 29px 35px;
     margin-bottom: 40px;
 }
 
-.menu_item h3{
+.menu_item h3 {
     font-weight: 600;
     font-size: 30px;
     line-height: 200%;
-
     margin-bottom: 5px;
 }
 
-.menu_item_rating{
+.menu_item_rating {
     margin-bottom: 15px;
 }
 
-.menu_item_rating img{
+.menu_item_rating img {
     margin-right: 10px;
 }
 
-.menu_item_rating img:last-of-type{
+.menu_item_rating img:last-of-type {
     margin-right: 0;
 }
 
-.menu_item p{
+.menu_item p {
     font-size: 15px;
     line-height: 170%;
     color: #59442B;
-
     margin-bottom: 10px;
 }
 
-.menu_item_last{
+.menu_item_last {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu_item_last_price{
+.menu_item_last_price {
     font-weight: 600;
     font-size: 25px;
 }
 
-.menu_item_last a{
+.menu_item_last a {
     background-color: var(--c02);
     color: #fff;
     text-decoration: none;
     padding: 11px 36px;
     font-size: 18px;
     border-radius: 160px;
-
     transition: background-color .3s ease;
 }
 
-.menu_item_last a:hover{
+.menu_item_last a:hover {
     background-color: var(--c03);
 }
 
-.menu_pag{
+.menu_pag {
     display: flex;
     justify-content: center;
 }
 
-.menu_pag a{
+.menu_pag a {
     text-decoration: none;
 }
 
-.back{
+.back, .next {
     background-color: var(--c01);
     border-radius: 15px;
     color: #fff;
-
     height: 55px;
     width: 55px;
-
     position: relative;
-
-    margin-right: 30px;
+    margin: 0 30px;
 }
 
-.back span{
-    position: absolute;/* Выравнивание по центру до параметра transform*/
-
+.back span, .next span {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -383,118 +353,75 @@ main{
     font-weight: 200;
 }
 
-.page{
-    background-color: rgb(255, 138, 0, 0.1);
-
+.page, .dot {
     width: 55px;
     height: 55px;
     border-radius: 15px;
-
-    margin-right: 15px;
     position: relative;
+    margin: 0 15px;
 }
 
-.page span{
+.page {
+    background-color: rgb(255, 138, 0, 0.1);
+}
+
+.page span {
     color: var(--c02);
     font-weight: 600;
     font-size: 18px;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.dot{
-    position: relative;
-
-    width: 55px;
-    height: 55px;
-}
-
-.dot span{
+.dot span {
     color: #B7A28B;
     font-size: 26px;
     font-weight: 800;
-
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
-.next{
-    background-color: var(--c01);
-    border-radius: 15px;
-    color: #fff;
-
-    height: 55px;
-    width: 55px;
-
-    position: relative;
-
-    margin-left: 45px;
-}
-
-.next span{
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 40px;
-    font-weight: 200;
-}
-
-
-
 /* Reserve */
-
-.reserve{
+.reserve {
     background-color: rgba(255, 244, 231, 0.46);
-
-    padding-top: 113px;
-    padding-bottom: 40px;
+    padding: 113px 0 40px 0;
 }
 
-.reserve .container{
-    max-width: 1500px;
-    margin-right: 100px;
-}
-
-.reserve_inner{
+.reserve_inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.reserve_right{
+.reserve_right {
     margin-left: 100px;
 }
 
-.reserve_right h2{
+.reserve_right h2 {
     font-family: "Tinos", serif;
     font-size: 74px;
     font-weight: 700;
     line-height: 110%;
     color: var(--c01);
-
     margin-bottom: 50px;
 }
 
-.reserve_right h2 span{
+.reserve_right h2 span {
     color: var(--c02);
 }
 
-.reserve_right p{
+.reserve_right p {
     font-size: 20px;
     line-height: 200%;
     color: #5C4529;
-
     margin-bottom: 130px;
 }
 
-.reserve_right a{
+.reserve_right a {
     padding: 17px 55px;
     border-radius: 160px;
     background-color: var(--c02);
@@ -502,42 +429,27 @@ main{
     text-decoration: none;
 }
 
-.reserve_left{
-    margin-left: -80px;
-}
-
-
-
 /* Chefs */
-
-.chefs{
-    padding-top: 175px;
-    padding-bottom: 250px;
+.chefs {
+    padding: 175px 0 250px 0;
     text-align: center;
 }
 
-.chefs h2{
+.chefs h2 {
     line-height: 200%;
     font-size: 72px;
     font-family: "Tinos", serif;
     font-weight: 700;
-    text-align: center;
-
     margin-bottom: 135px;
 }
 
-.chefs_inner{
+.chefs_inner {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 150px;
 }
 
-.chef_item{
-    text-align: center;
-}
-
-.chef_item h3{
+.chef_item h3 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 25px;
@@ -545,12 +457,12 @@ main{
     color: var(--c01);
 }
 
-.chef_item p{
+.chef_item p {
     color: #A08D76;
     line-height: 200%;
 }
 
-a.chefs_all{
+a.chefs_all {
     background-color: var(--c02);
     font-size: 20px;
     font-weight: 600;
@@ -558,26 +470,22 @@ a.chefs_all{
     color: #fff;
     padding: 17px 75px;
     border-radius: 160px;
-
     transition: all .4s ease;
     display: inline-block;
 }
 
-a.chefs_all:hover{
+a.chefs_all:hover {
     background-color: var(--c03);
     transform: scale(1.07);
 }
 
-
-
 /* Clients */
-
-.clients{
+.clients {
     background-color: rgba(208, 204, 199, .1);
-    padding: 70px 0px 100px 0px;
+    padding: 70px 0 100px 0;
 }
 
-.clients_inner{
+.clients_inner {
     background-image: url(../img/clients/BGcust.png);
     background-position: center;
     background-size: contain;
@@ -585,61 +493,373 @@ a.chefs_all:hover{
     text-align: center;
 }
 
-.clients_title{
+.clients_title {
     font-size: 74px;
     font-family: "Tinos", serif;
     font-weight: 700;
     line-height: 200%;
     color: var(--c01);
-
     margin-bottom: 57px;
 }
 
-.clients_about_img{
+.clients_about_img {
     margin-bottom: 45px;
 }
 
-.clients_about_title{
+.clients_about_title {
     font-weight: 600;
     font-size: 30px;
     line-height: 200%;
     color: var(--c01);
 }
 
-.clients_about_text{
+.clients_about_text {
     color: #5C4529;
     font-size: 20px;
     line-height: 200%;
-
     margin-bottom: 65px;
 }
 
-.clients_about_inner{
+.clients_about_inner {
     position: relative;
-
     width: 530px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-.clients_about_inner p{
+.clients_about_inner p {
     font-size: 20px;
     font-family: "Tinos", serif;
     line-height: 170%;
     color: #5C4529;
 }
 
-#dot1{
+#dot1 {
     position: absolute;
-
-    top: -45;
-    left: -45;
+    top: -45px;
+    left: -45px;
     transform: rotate(180deg);
 }
 
-#dot2{
+#dot2 {
     position: absolute;
+    bottom: -45px;
+    right: -45px;
+}
 
-    bottom: -45;
-    right: -45;
+
+
+/* Основной стиль для бургер-меню */
+li.login{
+    display: none;
+}
+
+.burger-menu {
+    margin-right: 50px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 35px;
+    height: 3.6px;
+    background-color: var(--c01);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Скрыть меню по умолчанию */
+.hidden {
+    display: none;
+}
+
+/* Показывать бургер-меню на мобильных устройствах */
+@media screen and (max-width: 1000px) {
+    img.header_content_logo{
+        margin-left: 50px;
+    }
+
+    li.login{
+        display: block;
+    }
+
+    .nav_menu {
+        display: none; /* Скрываем обычное меню */
+        flex-direction: column; 
+        position: absolute; 
+        background-color: white; 
+        top: 60px; /* смещение под навигацию */
+        right: 0; /* выровнять по правому краю */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* добавляем тень для меню */
+        z-index: 999; /* располагаем над другими элементами */
+    }
+
+    .nav_menu.show {
+        display: flex; /* Показываем меню при добавленном классе show */
+        padding: 0;
+        padding-left: 10px;
+        margin-top: 40px;
+    }
+
+    .burger-menu {
+        display: flex; /* Показываем бургер-меню */
+    }
+
+    .header_content_last {
+        display: none; /* Скрываем кнопку "Войти" на мобильных устройствах */
+    }
+}
+
+/* Анимация бургер-меню */
+.burger-menu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+.burger-menu.active .line:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+
+
+/* Адаптация */
+
+@media screen and (max-width: 1180px) {
+    .m_c_btn1, .m_c_btn2 {
+        padding: 12px 42px;
+    }
+
+    main{
+        margin-top: 100px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    img.salad{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    p, h1, h2, h3{
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    main{
+        margin-top: 30px;
+    }
+
+    .main_content_title{
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .main_content h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .main_content p{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .main_content_buttons{
+        margin-bottom: 20px;
+    }
+
+    .m_c_btn1, .m_c_btn2 {
+        padding: 10px 22px;
+        font-size: 16px;
+    }
+
+    .m_c_btn2{
+        margin-left: 10px;
+    }
+
+
+    img.salad2{
+        display: none;
+    }
+
+    /* welcome */
+
+    .welcome, main, header, .menu, .reserve, .chefs{
+        padding: 10px 14px;
+    }
+
+    .welcome .container{
+        padding-top: 20px;
+    }
+
+    .welcome_all h2{
+        font-size: 34px;
+
+        margin-bottom: 18px;
+    }
+
+    .welcome_all p{
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .welcome_all a{
+        padding: 10px 28px;
+        font-size: 14px;
+
+        margin-bottom: 20px;
+    }
+
+    .menu h2{
+        font-size: 34px;
+    }
+
+    .menu_items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_buttons a{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+
+
+
+    .menu{
+        display: none;
+    }
+
+
+
+    /* Reserve */
+
+    .reserve_left img{
+        display: none;
+    }
+
+    .reserve_right{
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    .reserve_right h2{
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .reserve_right p{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .reserve_right a{
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .reserve{
+        padding-top: 30px;
+    }
+
+
+
+    /* Chefs */
+
+    .chefs{
+        align-items: center;
+    }
+
+    .chefs h2{
+        font-size: 26px;
+        line-height: 110%;
+
+        margin-top: 26px;
+        margin-bottom: 24px;
+    }
+
+    .chefs_inner{
+        display: block;
+    }
+
+    .chef_item img, .chef_item{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chef_item h3{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+
+    .chef_item{
+        margin-bottom: 20px;
+    }
+
+    .chefs_inner{
+        margin-bottom: 0;
+    }
+
+    a.chefs_all{
+        padding: 10px 40px;
+        font-size: 14px;
+        border-radius: 100px;
+    }
+
+
+
+    /* Clients */
+
+    .clients_inner h2{
+        font-size: 26px;
+    }
+}
+
+    
+
+
+
+@media screen and (max-width: 450px) {
+    img.header_content_logo{
+        margin-left: 30px;
+    }
+
+    .burger-menu{
+        margin-right: 30px;
+    }
+
+    .burger-menu .line {
+        width: 35px;
+        height: 3.6px;
+        margin-bottom: 3px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    header{
+        margin-top: 35px;
+    }
+
+    img.header_content_logo{
+        margin-left: 10px;
+    }
 }
