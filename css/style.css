@@ -1,4 +1,3 @@
-/* Переменные */
 :root {
     --c01: #311F09;
     --c02: #FF8A00;
@@ -6,7 +5,6 @@
     --c04: #FFE6C9;
 }
 
-/* Общие стили */
 body, html {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -29,7 +27,6 @@ h1, h2, h3, h4, p {
     margin: 0 auto;
 }
 
-/* Header */
 header {
     margin-top: 50px;
 }
@@ -66,7 +63,7 @@ nav a {
     text-decoration: none;
     color: var(--c01);
     margin-right: 45px;
-    transition: all .25s ease; 
+    transition: all .25s ease;
     display: inline-block;
 }
 
@@ -83,35 +80,31 @@ nav a.li1 {
     color: var(--c02);
 }
 
-/* Основные стили для навигационного меню */
 .nav_menu {
-    display: flex; /* Используем flex для расположения элементов в строку */
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы по умолчанию */
-    margin: 0; /* Убираем внешние отступы */
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Элементы навигации */
 .nav_menu li {
-    margin-right: 30px; /* Отступ между элементами */
+    margin-right: 30px;
 }
 
 .nav_menu li:last-child {
-    margin-right: 0; /* Убираем отступ у последнего элемента */
+    margin-right: 0;
 }
 
-/* Стили для ссылок в меню */
 .nav_menu a {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: var(--c01); /* Цвет текста */
-    transition: color 0.25s ease; /* Плавный переход цвета */
+    text-decoration: none;
+    color: var(--c01);
+    transition: color 0.25s ease;
 }
 
 .nav_menu a:hover {
-    color: var(--c03); /* Цвет текста при наведении */
+    color: var(--c03);
 }
 
-/* Main */
 main {
     margin-top: 150px;
 }
@@ -172,7 +165,6 @@ main {
     margin-left: 22px;
 }
 
-/* Welcome */
 .welcome {
     background-color: rgba(63, 198, 110, 0.1);
     padding: 147px 0 132px 0;
@@ -218,7 +210,6 @@ main {
     background-color: var(--c03);
 }
 
-/* Menu */
 .menu {
     padding: 164px 0 200px 0;
 }
@@ -348,7 +339,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 40px;
     font-weight: 200;
 }
@@ -372,7 +363,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .dot span {
@@ -382,10 +373,9 @@ main {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-/* Reserve */
 .reserve {
     background-color: rgba(255, 244, 231, 0.46);
     padding: 113px 0 40px 0;
@@ -429,7 +419,6 @@ main {
     text-decoration: none;
 }
 
-/* Chefs */
 .chefs {
     padding: 175px 0 250px 0;
     text-align: center;
@@ -462,7 +451,6 @@ main {
     line-height: 200%;
 }
 
-/* Clients */
 .clients {
     background-color: rgba(208, 204, 199, .1);
     padding: 70px 0 100px 0;
@@ -529,10 +517,7 @@ main {
     right: -45px;
 }
 
-
-
-/* Основной стиль для бургер-меню */
-li.login{
+li.login {
     display: none;
 }
 
@@ -551,120 +536,108 @@ li.login{
     transition: 0.3s;
 }
 
-/* Скрыть меню по умолчанию */
 .hidden, footer {
     display: none;
 }
 
-/* Показывать бургер-меню на мобильных устройствах */
 @media screen and (max-width: 1000px) {
-    img.header_content_logo{
+    img.header_content_logo {
         margin-left: 50px;
     }
 
-    li.login{
+    li.login {
         display: block;
     }
 
     .nav_menu {
-        display: none; /* Скрываем обычное меню */
-        flex-direction: column; 
-        position: absolute; 
-        background-color: white; 
-        top: 60px; /* смещение под навигацию */
-        right: 0; /* выровнять по правому краю */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* добавляем тень для меню */
-        z-index: 999; /* располагаем над другими элементами */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 60px;
+        right: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 999;
     }
 
     .nav_menu.show {
-        display: flex; /* Показываем меню при добавленном классе show */
+        display: flex;
         padding: 0;
         padding-left: 10px;
         margin-top: 40px;
     }
 
     .burger-menu {
-        display: flex; /* Показываем бургер-меню */
+        display: flex;
     }
 
     .header_content_last {
-        display: none; /* Скрываем кнопку "Войти" на мобильных устройствах */
+        display: none;
     }
 }
 
-/* Анимация бургер-меню */
 .burger-menu.active .line:nth-child(1) {
     transform: rotate(45deg) translate(10px, 10px);
 }
+
 .burger-menu.active .line:nth-child(2) {
     opacity: 0;
 }
+
 .burger-menu.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
-
-
-
-
-
-/* Адаптация */
 
 @media screen and (max-width: 1180px) {
     .m_c_btn1, .m_c_btn2 {
         padding: 12px 42px;
     }
 
-    main{
+    main {
         margin-top: 100px;
     }
 }
 
-
-
 @media screen and (max-width: 1000px) {
-    img.salad{
+    img.salad {
         display: none;
     }
 }
 
-
-
 @media screen and (max-width: 650px) {
-
-    .container{
+    .container {
         max-width: none;
     }
 
-    p, h1, h2, h3{
+    p, h1, h2, h3 {
         margin: 0;
         padding: 0;
     }
 
-    p{
+    p {
         font-size: 14px;
     }
 
-    main{
+    main {
         margin-top: 30px;
     }
 
-    .main_content_title{
+    .main_content_title {
         font-size: 16px;
         margin-bottom: 24px;
     }
 
-    .main_content h1{
+    .main_content h1 {
         font-size: 40px;
         margin-bottom: 10px;
     }
 
-    .main_content p{
+    .main_content p {
         font-size: 14px;
         margin-bottom: 40px;
     }
 
-    .main_content_buttons{
+    .main_content_buttons {
         margin-bottom: 20px;
     }
 
@@ -673,196 +646,164 @@ li.login{
         font-size: 16px;
     }
 
-    .m_c_btn2{
+    .m_c_btn2 {
         margin-left: 10px;
     }
 
-
-    img.salad2{
+    img.salad2 {
         display: none;
     }
 
-    /* welcome */
-
-    .welcome, main, header, .menu, .reserve, .chefs, .footer{
+    .welcome, main, header, .menu, .reserve, .chefs, .footer {
         padding: 10px 14px;
     }
 
-    .welcome .container{
+    .welcome .container {
         padding-top: 20px;
     }
 
-    .welcome_all h2{
+    .welcome_all h2 {
         font-size: 34px;
-
         margin-bottom: 18px;
     }
 
-    .welcome_all p{
+    .welcome_all p {
         font-size: 14px;
         margin-bottom: 40px;
     }
 
-    .welcome_all a{
+    .welcome_all a {
         padding: 10px 28px;
         font-size: 14px;
-
         margin-bottom: 20px;
     }
 
-    .menu h2{
+    .menu h2 {
         font-size: 34px;
     }
 
-    .menu_items{
+    .menu_items {
         display: flex;
         flex-direction: column;
     }
 
-    .menu_buttons a{
+    .menu_buttons a {
         padding: 10px 30px;
         font-size: 14px;
     }
 
-
-
-
-    .menu{
+    .menu {
         display: none;
     }
 
-
-
-    /* Reserve */
-
-    .reserve_left img{
+    .reserve_left img {
         display: none;
     }
 
-    .reserve_right{
+    .reserve_right {
         margin: 0;
         padding-bottom: 40px;
     }
 
-    .reserve_right h2{
+    .reserve_right h2 {
         font-size: 34px;
         margin-bottom: 18px;
     }
 
-    .reserve_right p{
+    .reserve_right p {
         font-size: 14px;
         margin-bottom: 50px;
     }
 
-    .reserve_right a{
+    .reserve_right a {
         font-size: 16px;
         padding: 10px 24px;
     }
 
-    .reserve{
+    .reserve {
         padding-top: 30px;
     }
 
-
-
-    /* Chefs */
-
-    .chefs{
+    .chefs {
         align-items: center;
     }
 
-    .chefs h2{
+    .chefs h2 {
         font-size: 26px;
         line-height: 110%;
-
         margin-top: 26px;
         margin-bottom: 24px;
     }
 
-    .chefs_inner{
+    .chefs_inner {
         display: block;
     }
 
-    .chef_item img, .chef_item{
+    .chef_item img, .chef_item {
         width: 78%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .chef_item h3{
+    .chef_item h3 {
         font-size: 20px;
         margin-top: 8px;
         margin-bottom: 3px;
     }
 
-    .chef_item{
+    .chef_item {
         margin-bottom: 20px;
     }
 
-    .chefs_inner{
+    .chefs_inner {
         margin-bottom: 0;
     }
 
-    a.chefs_all{
+    a.chefs_all {
         padding: 10px 40px;
         font-size: 14px;
         border-radius: 100px;
     }
 
-
-
-    /* Clients & Footer */
-
-    .clients{
+    .clients {
         display: none;
     }
 
-    footer{
+    footer {
         display: block;
         background-color: #000;
     }
 
-    .footer{
-        padding-top: auto;
-        padding-bottom: auto;
-    }
-
-    .footer_inner{
+    .footer_inner {
         display: flex;
         justify-content: center;
     }
 
-    .footer img{
+    .footer img {
         width: 35%;
         height: 35%;
         margin-top: auto;
         margin-bottom: auto;
     }
 
-    .footer_inner p{
-        /* font-family: "Poppins", sans-serif; */
+    .footer_inner p {
         font-family: "Raleway", sans-serif;
         font-size: 12px;
         font-weight: 500;
         width: 60%;
         color: #fff;
         margin-right: 5%;
-
-        padding-top: auto;
-        padding-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
-    
-
-
-
 @media screen and (max-width: 450px) {
-    img.header_content_logo{
+    img.header_content_logo {
         margin-left: 30px;
     }
 
-    .burger-menu{
+    .burger-menu {
         margin-right: 30px;
     }
 
@@ -873,29 +814,24 @@ li.login{
     }
 }
 
-
-
-
 @media screen and (max-width: 400px) {
-
-    header{
+    header {
         margin-top: 35px;
     }
 
-    img.header_content_logo{
+    img.header_content_logo {
         margin-left: 10px;
     }
 }
 
-
 @media screen and (max-width: 300px) {
     .m_c_btn1, .m_c_btn2 {
-    border-radius: 100px;
-    color: #fff;
-    text-decoration: none;
-    transition: transform .33s ease;
-    display: inline-block;
-    padding: 9px 17px;
-    font-size: 14px;
-}
+        border-radius: 100px;
+        color: #fff;
+        text-decoration: none;
+        transition: transform .33s ease;
+        display: inline-block;
+        padding: 9px 17px;
+        font-size: 14px;
+    }
 }
